@@ -1,0 +1,43 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pitoca</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="/script.js"></script>
+    
+</head>
+<body>
+    
+    <script>
+        function play() {
+          var audio = document.querySelector("audio");
+          audio.volume = 0.2
+          audio.play();
+        }
+    </script>
+    <audio src="sounds/backtodecember.mp3"></audio>
+
+    <div class="flex flex-col max-w-100% min-h-screen place-content-center bg-gray-800">
+        
+        <div class="self-center">
+            <button id="botao" onclick="typeWriter(), play()" class="button-87" role="button">...</button>
+        </div>
+        
+        <div class="self-center px-20">
+            <h1 id="texto1" class="text-center" style="display: none;"></h1>
+        </div>
+
+        <div class="flex flex-row place-content-center">
+
+            <button onclick="redirectMemory()" id="btnmemory" class="button-87" role="button" style="display: none;">Continuar</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
